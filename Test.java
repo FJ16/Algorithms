@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class test {
+public class Test {
     public static void main(String[] args) {
         // ebay 1:
         StringCompression ebay1 = new StringCompression();
