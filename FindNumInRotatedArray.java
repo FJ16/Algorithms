@@ -31,31 +31,36 @@ public class FindNumInRotatedArray {
     }
 
     public boolean findWithDuplicate(int[] nums, int target) {
+        if (nums == null || nums.length == 0) return false;
         int start = 0, end = nums.length - 1;
 
+        // 我们也可以提前停下来check
         while(start <= end) {
             int mid = start + (end - start) / 2;
             if (nums[mid] == target) {
                 return true;
             }
-            //If we know for sure right side is sorted or left side is unsorted
-            if (nums[mid] < nums[end] || nums[mid] < nums[start]) {
+
+            // High-level idea is to check one side to find a sorted range:
+            //If we know for sure right side is sorted, then we can check if the target is in the right part
+            if (nums[mid] < nums[end]) {
                 if (target > nums[mid] && target <= nums[end]) {
                     start = mid + 1;
                 } else {
                     end = mid - 1;
                 }
-                //If we know for sure left side is sorted or right side is unsorted
-            } else if (nums[mid] > nums[start] || nums[mid] > nums[end]) {
+            }
+            //If we know for sure right side is unsorted, then the mid will be located in the rotated part, so
+            // we can know for sure the [start, mid] part is sorted, then we can check if the target is inside of it
+            else if (nums[mid] > nums[end]) {
                 if (target < nums[mid] && target >= nums[start]) {
                     end = mid - 1;
                 } else {
                     start = mid + 1;
                 }
-                //If we get here, that means nums[start] == nums[mid] == nums[end], then shifting out
-                //any of the two sides won't change the result but can help remove duplicate from
-                //consideration, here we just use end-- but left++ works too
             } else {
+                // when the nums[mid] == nums[right], then this "find mid" can not allow us to discard some parts,
+                // then we just reduce the search range.
                 end--;
             }
         }
