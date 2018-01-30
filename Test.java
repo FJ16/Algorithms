@@ -23,11 +23,12 @@ public class Test {
 //        int[] res4 = ebay4.getRes(new int[]{1,3,-1,-3,5,3,6,7}, 3);
 //        printIntArray(res4);
 
-          // ebay 5: merge sort
-          MergeSort ebay5 = new MergeSort();
-          int[] res5 = ebay5.mergeSort(new int[]{2,3,5,7,6,8,3});
-          printIntArray(res5);
+//        // ebay 5: merge sort
+//        MergeSort ebay5 = new MergeSort();
+//        int[] res5 = ebay5.mergeSort(new int[]{2,3,5,7,6,8,3});
+//        printIntArray(res5);
 
+          System.out.println(new String(new char[]{'a','b'}, 0, 2));
     }
 
     private static void printIntList(List<Integer> list) {
