@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -22,5 +23,9 @@ public class WordBreak {
         }
 
         return dp[s.length()];
+    }
+
+    public List<String> wordBreakII(String s, List<String> wordDict) {
+        return new ArrayList<String>();
     }
 }
