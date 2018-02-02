@@ -13,8 +13,8 @@ public class SlidingWindowMaximum {
         //        6 - 3 = 3 --> arr[3] --> 转化成长度要 + 1
 
         for (int i = 0; i < input.length; i++) {
-            while (!window.isEmpty() && input[i] >= input[window.peekLast()]) {
-                // make sure we always have descending order in the Deque
+            while (!window.isEmpty() && input[i] >= input[window.peekLast()]) { // 做一次，之后不用再做了 --> Amortized (e.g. ArrayList expend/ Two stack to Queue)
+                // make sure we always have descending order in the Deque       // 单调序列
                 window.pollLast();
             }
 
