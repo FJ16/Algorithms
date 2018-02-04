@@ -38,6 +38,6 @@ public class SquareRoot {
             else high = mid;
         }
 
-        return (low + high) / 2;
+        return (low + high) / 2; // finally find an avg
     }
 }

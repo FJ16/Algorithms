@@ -28,7 +28,10 @@ public class Test {
 //        int[] res5 = ebay5.mergeSort(new int[]{2,3,5,7,6,8,3});
 //        printIntArray(res5);
 
-          System.out.println(new String(new char[]{'a','b'}, 0, 2));
+//        System.out.println(new String(new char[]{'a','b'}, 0, 2));
+
+          SquareRoot sqrtr = new SquareRoot();
+          System.out.println(sqrtr.mySqrtDouble(192.332, null));
     }
 
     private static void printIntList(List<Integer> list) {

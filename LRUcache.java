@@ -8,7 +8,7 @@ public class LRUcache {
     //   b. if the cache is not full, then we just need to put it in.
     // The next Question is "How can we store those key and value?", No doubt we need a map to store the key.
     // But how about the value? if we use another pre-defined collection data structure, that means we need to figure out another way to find the data in
-    // addtional data structure, So we just need to 《Customize a Class》 for it (即是单独的数据结构，又可以链接成一个collection)
+    // additional data structure, So we just need to 《Customize a Class》 for it (即是单独的数据结构，又可以链接成一个collection)
     // , which is better be a doubly linked list, since we can delete it and move it to the head or tail in Constant time
 
     private final Map<Integer, CacheNode> map;
