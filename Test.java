@@ -29,9 +29,12 @@ public class Test {
 //        printIntArray(res5);
 
 //        System.out.println(new String(new char[]{'a','b'}, 0, 2));
+//
+//          SquareRoot sqrtr = new SquareRoot();
+//          System.out.println(sqrtr.mySqrtDouble(192.332, null));
 
-          SquareRoot sqrtr = new SquareRoot();
-          System.out.println(sqrtr.mySqrtDouble(192.332, null));
+        KEmptySlots sol = new KEmptySlots();
+        System.out.println(sol.kempty(new int[]{3,1,5,4,2}, 1));
     }
 
     private static void printIntList(List<Integer> list) {
