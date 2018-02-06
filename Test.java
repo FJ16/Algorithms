@@ -17,24 +17,25 @@ public class Test {
 //        ConsecutiveFindDup ebay3 = new ConsecutiveFindDup();
 //        int res3 = ebay3.findDup(new int[]{1,2,3,4,5,2,6,7,8});
 //        System.out.println(res3);
-
+//
 //        // ebay 4: Maximum num in K length sub-array;
 //        SlidingWindowMaximum ebay4 = new SlidingWindowMaximum();
 //        int[] res4 = ebay4.getRes(new int[]{1,3,-1,-3,5,3,6,7}, 3);
 //        printIntArray(res4);
-
+//
 //        // ebay 5: merge sort
 //        MergeSort ebay5 = new MergeSort();
 //        int[] res5 = ebay5.mergeSort(new int[]{2,3,5,7,6,8,3});
 //        printIntArray(res5);
-
+//
 //        System.out.println(new String(new char[]{'a','b'}, 0, 2));
 //
-//          SquareRoot sqrtr = new SquareRoot();
-//          System.out.println(sqrtr.mySqrtDouble(192.332, null));
-
-        KEmptySlots sol = new KEmptySlots();
-        System.out.println(sol.kempty(new int[]{3,1,5,4,2}, 1));
+//        SquareRoot sqrtr = new SquareRoot();
+//        System.out.println(sqrtr.mySqrtDouble(192.332, null));
+//
+//        BaseConverter bc = new BaseConverter();
+//        String res = bc.convert("2112321", 4, 16);
+//        System.out.println(res);
     }
 
     private static void printIntList(List<Integer> list) {
