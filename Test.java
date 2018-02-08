@@ -36,6 +36,7 @@ public class Test {
 //        BaseConverter bc = new BaseConverter();
 //        String res = bc.convert("2112321", 4, 16);
 //        System.out.println(res);
+        System.out.println(0%3);
     }
 
     private static void printIntList(List<Integer> list) {

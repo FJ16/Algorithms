@@ -35,7 +35,7 @@ public class LRUcache {
         return res.val;
     }
 
-    public void put(int key, int val) {
+    public void put(int key, int val) {  // 可以 return 被踢出来的 node
         // cache hit
         if (map.containsKey(key)) {
             CacheNode hit = map.get(key);
