@@ -34,7 +34,7 @@ public class KthLargestNumInArray {
         // left 是我们最后找到的 放pivot的位置
         swap(arr, left, pivot);
         if (k == left) return arr[left];
-        return left < k ? quickSelectWayToFindK(arr, left + 1, end, k) : quickSelectWayToFindK(arr, start, end - 1, k);
+        return left < k ? quickSelectWayToFindK(arr, left + 1, end, k) : quickSelectWayToFindK(arr, start, left - 1, k);
     }
 
     private void swap(int[] arr, int a, int b) {
