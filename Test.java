@@ -38,6 +38,9 @@ public class Test {
 //        System.out.println(res)；
 
         System.out.println(0%3);
+
+        Kdistinct t = new Kdistinct();
+        printStrList(t.find("awaglknagawunagwkwagl", 4));
     }
 
     private static void printIntList(List<Integer> list) {
