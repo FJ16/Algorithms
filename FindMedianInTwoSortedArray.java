@@ -7,6 +7,8 @@ public class FindMedianInTwoSortedArray {
         int k = (total + 1) / 2;
         // +1是为了满足当total是奇数时，除以2会"偏左"， 因为取得是int,
         // e.g. 5 / 2 = 2.5 --> 2, 但median位置应该是3，所以我们先 + 1， 保证能正确算到 median int, 且+1对偶数不影响结果，因为偶数 + 1后会"偏左"回来
+
+        // 当然，这里计算出的k是距离性质，这也是为啥后面的返回值如果是奇数总数下，返回一个值时，返回 offset + k - 1, 要 -1 来 match index 从零开始的数组特性
         return helper(a, b, 0, 0, k, total);
     }
     // a_left & b_left represent the start position of our search range, [x_left, x_left + k]
