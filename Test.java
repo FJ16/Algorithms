@@ -37,10 +37,36 @@ public class Test {
 //        String res = bc.convert("2112321", 4, 16);
 //        System.out.println(res)；
 
-        System.out.println(0%3);
+//        System.out.println(0%3);
+//
+//        Kdistinct t = new Kdistinct();
+//        printStrList(t.find("awaglknagawunagwkwagl", 4));
 
-        Kdistinct t = new Kdistinct();
-        printStrList(t.find("awaglknagawunagwkwagl", 4));
+//          List<String> res = new TextJustification().fullJustify(
+//                  new String[]{"Listen","to","many,","speak","to","a","few."}, 6);
+//        String v = "1.2.3";
+//        String[] s = v.split(".");
+//        for (String str : s) System.out.println(str);
+        // Initialising string
+        // Initialising string
+
+        // indexOf test
+//        String Str = new String("Welcome to geeksforgeeks");
+//        System.out.println(Str.length());
+//        // Initialising search string
+//        String subst = new String("geeks");
+//
+//        // print the index of initial character
+//        // of Substring aftr 14th position
+//        // prints 19
+//        System.out.print("Found geeks(after 14th index) starting at position : ");
+//        System.out.println(Str.indexOf(subst, 19)); // fromIndex is included
+//        System.out.println(Str.substring(24));
+
+        // Calculator test
+        Calculater test = new Calculater();
+        System.out.println(test.calculate("(1)"));
+
     }
 
     private static void printIntList(List<Integer> list) {
