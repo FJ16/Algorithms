@@ -13,8 +13,11 @@ public class Calculater {
         //    (first pop one should be the "right" one in the infix sequence), and push the result back to the operands stack
         //    [This step is similar as the evaluating RPN, but doing in the RPN generation process]
         // 4. After process all the expression, use the 2 stack(combined as a RPN expression) to evaluate rest of those operands.
-        // 5. See line 41 comment
+        // 5. See line 47 comment
 
+        // The other way is to preserve the default result and initial operator for different precedence level:
+        // See link:
+        // https://leetcode.com/problems/basic-calculator-iii/discuss/113592/Development-of-a-generic-solution-for-the-series-of-the-calculator-problems
         Deque<Integer> operands = new LinkedList<>();
         Deque<Character> operators = new LinkedList<>();
 
