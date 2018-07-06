@@ -1,4 +1,4 @@
-public class isBalancedBinaryTree {
+public class IsBalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
         if (null == root) return true;
         return getHeight(root) != -1;

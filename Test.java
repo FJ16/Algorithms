@@ -67,6 +67,9 @@ public class Test {
         Calculater test = new Calculater();
         System.out.println(test.calculate("(1)"));
 
+        // Print binary string
+        FirstUniqueChar test2 = new FirstUniqueChar();
+        System.out.println(test2.firstUniqChar("leetcode"));
     }
 
     private static void printIntList(List<Integer> list) {
