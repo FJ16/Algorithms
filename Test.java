@@ -63,16 +63,32 @@ public class Test {
 //        System.out.println(Str.indexOf(subst, 19)); // fromIndex is included
 //        System.out.println(Str.substring(24));
 
-        // Calculator test
-        Calculater test = new Calculater();
-        System.out.println(test.calculate("(1)"));
+//        // Calculator test
+//        Calculater test = new Calculater();
+//        System.out.println(test.calculate("(1)"));
+//
+//        // Print binary string
+//        FirstUniqueChar test2 = new FirstUniqueChar();
+//        System.out.println(test2.firstUniqChar("leetcode"));
+//
+//        BackspaceStringEqual t = new BackspaceStringEqual();
+//        System.out.println(t.backspaceCompare("ab##", "c#d#"));
 
-        // Print binary string
-        FirstUniqueChar test2 = new FirstUniqueChar();
-        System.out.println(test2.firstUniqChar("leetcode"));
+//        Vehicle v = new Car();
+//        ((Car) v).print2();
+//        int t = 1 << 31;
+//        System.out.println(t);
+//        int z = 1 << 30;
+//        System.out.println(z);
+//        t |= z;
+//        System.out.println(t);
+//        System.out.println(Integer.MAX_VALUE);
+        NQueen t = new NQueen();
+        printListList(t.solveNQueens(4));
     }
 
-    private static void printIntList(List<Integer> list) {
+    private static void printIntList(List<Integer> list) throws Exception {
+        if (list == null) throw new Exception("input list can not be null");
         for (Integer n : list) System.out.println(n);
     }
 
@@ -82,6 +98,16 @@ public class Test {
 
     private static void printIntArray(int[] res) {
         for (int n : res) System.out.println(n);
+    }
+
+    private static void printListList(List<List<String>> list) {
+        for (int i = 0; i < list.size(); i++) {
+            List<String> cur = list.get(i);
+            for (int j = 0; j < cur.size(); j++) {
+                System.out.println(cur.get(j));
+            }
+            System.out.println("------------------");
+        }
     }
 }
 
