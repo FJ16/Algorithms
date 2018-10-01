@@ -8,7 +8,7 @@ public class ReverseSentence {
             int j = i;
             while (j < str.length && str[j] != ' ') j++;
             reverse(i, j - 1, str);
-            if (j == str.length - 1) reverse(i, j, str);
+            // if (j == str.length - 1) reverse(i, j, str);
             i = j;
         }
         reverse(0, str.length - 1, str);
